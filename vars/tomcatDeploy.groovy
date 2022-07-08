@@ -1,5 +1,5 @@
 def call (credId,userName,ipAddrs) {
-  sshagent(['credId']) {
+  sshagent([credId]) {
  
     ipAddrs.each{ipAddr->
         sh "mv target/*.war target/myapp.war"
